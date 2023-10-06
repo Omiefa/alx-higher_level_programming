@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    "Carry out some Math operations"
+    """Carry out some Math operations"""
 
     from calculator_1 import add, sub, mul, div
 
