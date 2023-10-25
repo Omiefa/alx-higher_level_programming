@@ -5,5 +5,4 @@
 
 class Square:
     """no action"""
-
     pass
