@@ -1,0 +1,47 @@
+Test cases for 0-add_integer module
+
+Importing function from the module
+    >>> add_integer = __import__('0-add_integer').add_integer
+ 
+Adding two positive integers (a = 2, b = 1)
+    >>> add_integer(2, 1)
+    3
+
+Adding two negative integers (a = -5, b = -8)
+    >>> add_integer(-5, -8)
+    -13
+
+Adding a positive and negative integer (a = 4, b = -20)
+    >>> add_integer(4, -20)
+    -16
+
+Adding two integers, the second being the default value (a = 50, b = 98)
+    >>> add_integer(50)
+    148
+
+Adding two positive float numbers (a = 3.7, b = 0.9)
+    >>> add_integer(3.7, 0.9)
+    3
+
+Adding two negative float numbers (a = -6.54, b = -19.3)
+    >>> add_integer(-6.54, -19.3)
+    -25
+
+Adding a negative float and the default second integer (a = -20.56, b = 98)    
+    >>> add_integer(-20.56)
+    78
+
+Adding a string and the default second integer (a = "old", b = 98)
+    >>> add_integer("old")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      raise TypeError("a must be an integer")
+    TypeError: a must be an integer
+
+Adding a character and a positive integer (a = 'u', b = 29)
+    >>> add_integer('u', 29)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      raise TypeError("a must be an integer")
+    TypeError: a must be an integer
+
